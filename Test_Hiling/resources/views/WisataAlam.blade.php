@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('css/WisataAlam.css')}}">
+    <link rel="stylesheet" href="{{asset('css/non_login_ver/WisataAlam.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
     <!------------------------------------------>
@@ -33,7 +33,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav nav-pills nav justify-content-end">
                         <li class="nav-item">
-                          <a class="nav-link "  href="/welcome">Home</a>
+                          <a class="nav-link " href="/">Home</a>
                         </li>
                         <!-- <li class="nav-item">
                           <a class="nav-link" href="#">Wisata</a>
@@ -87,20 +87,24 @@
             </div>
         </div>
 
-        <div class="image-container">
+        <a href="/AlamJakarta"><div class="image-container">
             <img src="./Images/AlamJakarta.png" alt="">
             <div class="image-text">JAKARTA</div>
-        </div>
+        </div></a>
         
-        <div class="image-container">
+        <a href="/AlamBogor">
+          <div class="image-container">
             <img src="./Images/AlamBogor.png" alt="">
             <div class="image-text">BOGOR</div>
-        </div>
+          </div>
+        </a>
         
-        <div class="image-container">
+        <a href="/AlamBandung">
+          <div class="image-container">
             <img src="./Images/AlamBandung.png" alt="">
             <div class="image-text">BANDUNG</div>
-        </div>
+          </div>
+        </a>
 
     </section>
       

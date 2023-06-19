@@ -1,0 +1,459 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+    
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(/font/Poppins-Bold.ttf);
+}
+.garis {
+    border-bottom: 2px solid #02315E;
+    margin-top: 45px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+.banneratas{
+    height: 40px;
+    width: 100%;
+    background-color: #02315E;
+}
+
+
+.container-fluid{
+    height: 70px;
+}
+
+.navbar{
+    font-family: "PoppinsBold";
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #02315E;
+}
+
+nav ul li{
+    
+    margin-top: 4%;
+}
+
+.navbar-brand>img{
+
+    margin-left: 10%;
+}
+
+.nav-link{
+
+    color: #02315E;
+    font-size: 24px;
+}
+
+.show{
+
+    display: flex !important;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.nav-item .btn {
+
+    font-size: 24px;
+    padding: 9px 14px;
+    border-color: #0d6efd;
+}
+
+.nav-item .btn {
+
+    font-size: 24px;
+    padding: 9px 14px;
+    background-color: #2F70AF;
+    color: white;
+    font-family: "PoppinsBold";
+}
+
+.nav-item .btn:hover {
+
+    color: #2F70AF;
+   
+}
+
+.SpaceIsiAtas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 3%;
+}
+
+.space_gambar{
+    margin: 20px;
+    padding-right: 10px;
+}
+
+.space_judul{
+    margin: 20px 0 0 20px;
+    font-family: "PoppinsBold";
+}
+
+.JudulAlam{
+    font-size: 65px;
+    color: #02315E;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#wisata{
+    width: 95%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+
+
+.gambar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.left-image {
+    
+    width: 66%;
+    height: auto;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width : 32%
+}
+
+.caption{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.captionKanan{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.captionKiri h1{
+    font-size: 20px;
+    
+}
+
+.captionKiri h2{
+    font-size: 40px;
+    font-family: "PoppinsBold";
+}
+
+.captionKiri h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.captionKanan h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.captionKanan h5{
+    font-size: 25px;
+    color: #F92D2D;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#titik{
+    color: #B2B2B2;
+    margin: 0 5px 0 5px;
+}
+
+
+
+
+#tiket{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 20px 60px;
+    justify-content: flex-start;
+    height:initial;
+}
+
+#tiket #icon-ticket{
+    width: 28px;
+}
+
+
+
+.Lihatinfo{
+    display: flex;
+    justify-content: right;
+}
+
+.Lihatinfo .btn{
+    font-weight: 300;
+    font-size: 20px;
+    color:#ffffff;
+    background-color: #2F70AF;
+    justify-content: right;
+    border-radius: 10px;
+    padding: 15px 42px;
+}
+
+.Deskripsi{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.Deskripsi h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.Deskripsi h2{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: justify;
+    line-height: 1.5
+}
+
+
+#review{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.review-heading{
+    font-size:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+}
+
+.review-heading .kiri {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.review-heading .kanan {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: underline;
+    color:#014C86;
+}
+
+.kotakreview{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.kotakreview img{
+    width: 49%;
+    height: auto;
+}
+
+.spaceTiket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tiket{
+    width: 90%;
+}
+
+.tiket .h1{
+    font-size: 36px;
+    font-weight: 700; 
+}
+
+.tiket-heading{
+    font-size:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    margin-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.tiket-heading .kiri {
+    font-size: 25px;
+}
+
+.tiket-heading .kanan {
+    font-size: 30px;
+    font-family: "PoppinsBold";
+    color:#014C86;
+}
+
+.tanggal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.tiket .btn {
+    width: 10%;
+    font-size: 20px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    border-color: #000000;
+    border-radius: 15px;
+}
+
+.cardTiket{
+    padding: 20px 20px 20px 20px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 90%;
+    margin-bottom: 3%;
+}
+
+.card-heading{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.card-heading .kiri {
+    font-size: 30px;
+    font-family: "PoppinsBold";
+    color: #02315E;
+}
+
+.card-heading .kanan {
+    font-size: 24px;
+
+}
+
+.card-tengah{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.card-tengah .kiri {
+    font-size: 20px;
+    color: #02315E;
+}
+
+#inputNumber{
+    width: 13%;
+    margin: 20px 0px 10px;
+}
+
+.card-bottom{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-top: 1.5%;
+}
+
+.card-bottom .kiri {
+    font-size: 30px;
+    font-family: "PoppinsBold";
+    color: #F92D2D;
+}
+
+.card-bottom .kanan {
+    font-size: 24px;
+    width: 13%;
+}
+
+.BeliSekarang .btn{
+    font-weight: 300;
+    font-size: 20px;
+    color:#ffffff;
+    background-color: #2F70AF;
+    justify-content: right;
+    border-radius: 10px;
+    padding: 15px 42px;
+}
+
+
+
+.footer{
+    font-size: 14px;
+    background-color: #1a1a1a;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    
+}
+
+.footer-text{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-bawah{
+
+    height: 50px;
+}

@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{{asset('css/home2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/non_login_ver/Home2.css')}}">
     <title>Home</title>
     <!------------------------------------------>
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -22,14 +22,14 @@
     <section class="body-atas">
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Home2.html"><img src="/Images/Home Logo.png" alt="Logo" width="246" height="73.87" class="d-inline-block align-text-top"></a>
+          <a class="navbar-brand" href="Home2.html"><img src="./Images/Home Logo.png" alt="Logo" width="246" height="73.87" class="d-inline-block align-text-top"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="nav nav-pills nav justify-content-end">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/welcome">Home</a>
+                  <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <!-- <li class="nav-item">
                   <a class="nav-link" href="#">Wisata</a>
@@ -72,20 +72,28 @@
       <input type="text" class="form-control" placeholder="Search">
     </div>
     <div class="link-button">
-      <a class="rounded-button" href="WisataAlam.html">
+      <a class="rounded-button" href="/WisataAlam">
         <img class="logo-button" src="./Images/Wisata Alam.png">
       </a>
-      <a class="rounded-button" href="WisataWahana.html">
+      <a class="rounded-button" href="/WisataWahana">
         <img class="logo-button" src="./Images/Wisata Wahana.png">
       </a>
-      <a class="rounded-button" href="WisataKuliner.html">
+      <a class="rounded-button" href="/WisataKuliner">
         <img class="logo-button" src="./Images/Wisata Kuliner.png">
       </a>
-      <a class="rounded-button" href="WisataSejarah.html">
+      <a class="rounded-button" href="/WisataSejarah">
         <img class="logo-button" src="./Images/Wisata Sejarah.png">
       </a>
     </div>
     </section>
+    <div class="kotaterpopuler">
+        <h2>Kota Terpopuler !!!</h2>
+    </div>
+
+    <div class="kotapopuler">
+        <img src="./Images/kotapopuler.png" alt="">
+    </div>
+    
     <div class="top-trending">
         <h2>Top Trending</h2>
     </div>
@@ -183,55 +191,8 @@
           </div>
         </div>
     </div>
-    <div class="top-trending">
-        <h2>Paket Liburan</h2>
-    </div>
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card shadow">
-              <img src="./Images/Dufan_card.png" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h4 class="card-title">Trip Pulau Seribu</h4>
-                <h5 class="card-title">DKI Jakarta</h5>
-                <br>
-                <br>
-                <br>
-                <p class="card-text">Rp 2.000.000</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow">
-              <img src="./Images/Manggrove_card.png" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h4 class="card-title">Paket Wisata Ancol</h4>
-                <h5 class="card-title">DKI Jakarta</h5>
-                <br>
-                <br>
-                <br>
-                <p class="card-text">Rp 700.000</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow">
-              <img src="./Images/paralayang_card.png" class="card-img-top" alt="...">
-  
-              <div class="card-body">
-                <h4 class="card-title">Kawah Putih Ciwidey Bandung</h4>
-                <h5 class="card-title">Bandung</h5>
-                <br>
-                <br>
-                <br>
-                <p class="card-text">Rp 1.500.000</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+    
+
     <!-------herta corner-------------------------------------->
     <!-- <br>
     <br>

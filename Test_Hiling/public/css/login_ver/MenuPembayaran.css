@@ -1,0 +1,304 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+    
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(/font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: Pathway;
+    src: url(/font/PathwayGothicOne-Regular.ttf);
+}
+
+
+.garis {
+    border-bottom: 2px solid #02315E;
+    margin-top: 45px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+.banneratas{
+    height: 40px;
+    width: 100%;
+    background-color: #02315E;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #02315E;
+}
+
+.container-fluid{
+    height: 70px;
+}
+
+.navbar{
+    font-family: "PoppinsBold";
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+nav ul li{
+    
+    margin-top: 4%;
+}
+
+.navbar-brand>img{
+
+    margin-left: 10%;
+}
+
+.nav-link{
+
+    color: #02315E;
+    font-size: 24px;
+}
+
+.show{
+
+    display: flex !important;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.nav-item .btn {
+
+    font-size: 24px;
+    padding: 9px 14px;
+    border-color: #0d6efd;
+}
+
+.nav-item .btn {
+
+    font-size: 24px;
+    padding: 9px 14px;
+    background-color: #2F70AF;
+    color: white;
+    font-family: "PoppinsBold";
+}
+
+.nav-item .btn:hover {
+
+    color: #2F70AF;
+   
+}
+
+.isi{
+    display: flex;
+    justify-content: center;
+}
+
+.spaceisi{
+    width: 95%
+    
+}
+
+.header{
+    width:20%;
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: "PoppinsBold";
+}
+
+.garisheader{
+    width: 100%;
+    border-bottom: 2px solid #02315E;
+}
+
+.space_deskripsi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.deskripsiBarang{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barang{
+    font-family: "Poppins";
+}
+
+.item1{
+    width: 33%;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.item2{
+    width: 34%;
+    text-align: center;
+    font-family: "Poppins";
+}
+
+.desk1{
+    font-size: 25px;
+    width: 33%;
+    text-align: center;
+}
+
+.desk2{
+    font-size: 25px;
+    width: 34%;
+    text-align: center;
+    font-family: "PoppinsBold";
+}
+
+
+.deskTiket{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoTiket{
+    height: 30%;
+}
+
+.desKiri{
+    width: 25%;
+}
+
+.isiTiket .nama{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.isiTiket .atas{
+    font-size: 15px;
+    font-family: "PoppinsBold";
+}
+
+.isiTiket .bawah{
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.desKanan{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    font-size: 30px;
+}
+
+.divider{
+    width: 100%;
+    border-bottom: 2px solid #02315E;
+    margin-top: 1%;
+}
+
+.divider2{
+    width: 100%;
+    border-bottom: 2px solid #02315E;
+    margin-top: 3%;
+}
+
+.Total{
+    width: 88%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2%;
+}
+
+.desTotal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 25px;
+    margin-top: 3%;
+    font-family: "Poppins";
+}
+
+.total2{
+    font-family: "PoppinsBold";
+}
+
+.metodePembayaran{
+    margin-top: 7%;
+    width: 85%;
+}
+
+.headermetode{
+    font-family: "Poppins";
+    font-size: 30px;
+    margin-bottom: 3%;
+}
+
+.tombol .btn{
+    width: 45%;
+    
+    font-size: 25px;
+    font-family: "Poppins";
+    border: 1px solid #808080;
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5% 1% 5%;
+}
+
+.tombol .btn .text{
+    width: 70%;
+}
+
+.tombol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.metodePembayaran .btn-primary{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    background-color: #2F70AF;
+    border-radius: 10px;
+    font-family: "Poppins";
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 5%;
+}
+
+.footer{
+
+    background-color: #1a1a1a;
+    /* background-color: black; */
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer-text{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-bawah{
+
+    height: 50px;
+}

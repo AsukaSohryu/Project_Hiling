@@ -7,7 +7,7 @@
     <title>Masuk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('css/Masuk.css')}}">
+    <link rel="stylesheet" href="{{asset('css/non_login_ver/Masuk.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!------------------------------------------>
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -30,13 +30,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav nav-pills nav justify-content-end">
                         <li class="nav-item">
-                          <a class="nav-link "  href="/welcome">Home</a>
+                          <a class="nav-link " href="/">Home</a>
                         </li>
                         <!-- <li class="nav-item">
                           <a class="nav-link" href="#">Wisata</a>
                         </li> -->
                         <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <a class="nav-link dropdown-toggle"  aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Wisata
                           </a>
                           <div class="dropdown-wisata">
@@ -53,16 +53,16 @@
                           </div>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="/TentangKami">Tentang Kami</a>
+                          <a class="nav-link"  href="/TentangKami">Tentang Kami</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/CekOrder_NoLogin">Cek Order</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="/Masuk">Masuk</a>
+                            <a class="nav-link active" href="/Masuk">Masuk</a>
                         </li>
-                        <li class="nav-item" >
-                              <a href="/Daftar" type="button" class="btn btn-light">Daftar</a>
+                        <li class="nav-item">
+                          <a href="/Daftar" type="button" class="btn btn-light">Daftar</a>
                         </li>
                     </ul>
                     </div>  
@@ -80,28 +80,32 @@
                 <div class="Space_Form">
                     <h1 class="JudulMasuk">Masuk</h1>
 
-                    <form action="" method="POST">
+                    <form method="post" action="{{route('checkmasuk')}}">
                       @csrf
                         <div class="form-group">
                           <label for="inputEmail">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" >
+                          <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" name="email" >
+
                         </div>
+
                         <div class="form-group">
                           <label for="inputPassword">Kata Sandi</label>
-                          <input type="password" class="form-control" id="inputPassword" >
+                          <input type="password" class="form-control" id="inputPassword" name="password">
                         </div>
+                        
                         <div class="spacebutton">
                           <button type="submit" class="btn btn-primary">Masuk</button>
                         </div>
-                    </form>
+
+                      </form>
                     
                     <div class="formbawah">
                         <div class="spacelupa">
-                            <p class="lupa-sandi">Lupa Kata Sandi?</p>
+                            <a href="/LupaPassword"><p class="lupa-sandi">Lupa Kata Sandi?</p></a>
                         </div>
 
                         <div class="spacedaftarsekarang">
-                            <a href="Daftar.html"><p class="Daftarsekarang" >DAFTAR SEKARANG</p></a>
+                            <a href="/Daftar"><p class="Daftarsekarang" >DAFTAR SEKARANG</p></a>
                         </div>
                         
                     </div>
