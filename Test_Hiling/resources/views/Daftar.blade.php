@@ -80,31 +80,31 @@
                 <div class="Space_Form">
                     <h1 class="JudulMasuk">Daftar</h1>
 
-                    <form action="" method="POST">
+                    <form action="{{route('postmasuk')}}" method="POST">
                       @csrf
                         <div class="form-group">
                             <label for="inputName">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="inputName" name="inputName">
+                            <input type="text" class="form-control" id="inputName" name="name">
                         </div>
 
                         <div class="form-group">
                           <label for="inputEmail">Email</label>
-                          <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" >
+                          <input type="email" class="form-control" id="inputEmail" name="email" aria-describedby="emailHelp" >
                         </div>
 
                         <div class="form-group">
                             <label for="inputNomor">Nomor Ponsel</label>
-                            <input type="tel" class="form-control" id="inputNomor" name="inputNomor">
+                            <input type="tel" class="form-control" id="inputNomor" name="phone">
                         </div>
 
                         <div class="form-group">
                           <label for="inputPassword">Kata Sandi</label>
-                          <input type="password" class="form-control" id="inputPassword" name="inputPassword">
+                          <input type="password" class="form-control" id="inputPassword" name="password">
                         </div>
                         
                         <div class="form-group">
                             <label for="inputKonfirmasiPassword">Konfirmasi Kata Sandi</label>
-                            <input type="password" class="form-control" id="inputKonfirmasiPassword" name="inputKonfirmasiPassword">
+                            <input type="password" class="form-control" id="inputKonfirmasiPassword" name="password_confirmation">
                         </div>
 
                         <div class="spacebutton">

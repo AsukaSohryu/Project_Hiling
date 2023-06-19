@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daftar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{asset('css/CekOrder_NoLogin.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Daftar.css')}}">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!------------------------------------------>
     <link rel="stylesheet" href="style.css" type="text/css" />
@@ -18,69 +17,105 @@
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <!----------------------------------------------------->
 </head>
-<body>
-    <div class="banneratas"></div>
-    <section class="navbar">
-        <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="Home2.html"><img src="./Images/logobiru.png" alt="Logo" width="246" height="73.87" class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav nav-pills nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/">Home</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">Wisata</a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Wisata
-                      </a>
-                      <div class="dropdown-wisata">
-                        <ul class="dropdown-menu custom-dropdown">
-                          <div class="dropdown kiri">
-                            <li><a class="dropdown-item" href="/WisataAlam">Wisata Alam</a></li>
-                            <li><a class="dropdown-item" href="/WisataWahana">Wisata Wahana</a></li>
+    <body>
+    
+        <div class="banneratas"></div>
+        <section class="navbar">
+            <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="Home2.html"><img src="./Images/logobiru.png" alt="Logo" width="246" height="73.87" class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="nav nav-pills nav justify-content-end">
+                        <li class="nav-item">
+                          <a class="nav-link "  href="/welcome">Home</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                          <a class="nav-link" href="#">Wisata</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Wisata
+                          </a>
+                          <div class="dropdown-wisata">
+                            <ul class="dropdown-menu custom-dropdown">
+                              <div class="dropdown kiri">
+                                <li><a class="dropdown-item" href="/WisataAlam">Wisata Alam</a></li>
+                                <li><a class="dropdown-item" href="/WisataWahana">Wisata Wahana</a></li>
+                              </div>
+                              <div class="dropdown kanan">
+                                <li><a class="dropdown-item" href="/WisataKuliner">Wisata Kuliner</a></li>
+                                <li><a class="dropdown-item" href="/WisataSejarah">Wisata Sejarah</a></li>
+                              </div> 
+                              </ul>
                           </div>
-                          <div class="dropdown kanan">
-                            <li><a class="dropdown-item" href="/WisataKuliner">Wisata Kuliner</a></li>
-                            <li><a class="dropdown-item" href="/WisataSejarah">Wisata Sejarah</a></li>
-                          </div> 
-                          </ul>
-                      </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/TentangKami">Tentang Kami</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/CekOrder_NoLogin">Cek Order</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Masuk">Masuk</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="/Daftar" type="button" class="btn btn-light">Daftar</a>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="/TentangKami">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CekOrder_NoLogin">Cek Order</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="/Masuk">Masuk</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Daftar" type="button" class="btn btn-light">Daftar</a>
+                        </li>
+                    </ul>
+                    </div>  
+                </div>
+              </nav>
+            
+        </section>
+        <div class="garis"></div>
+
+        <section class="isi">
+            <div class="space_isi">
+                <div class="space_gambar">
+                    <img src="/Images/Gambarmasuk.png" alt="">
+                </div>
+                <div class="Space_Form">
+                    <h1 class="JudulMasuk">Daftar</h1>
+
+                    <form action="" method="POST">
+                      @csrf
+                        <div class="form-group">
+                            <label for="inputName">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="inputName" name="inputName">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputEmail">Email</label>
+                          <input type="email" class="form-control" id="inputEmail" name="inputEmail" aria-describedby="emailHelp" >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputNomor">Nomor Ponsel</label>
+                            <input type="tel" class="form-control" id="inputNomor" name="inputNomor">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="inputPassword">Kata Sandi</label>
+                          <input type="password" class="form-control" id="inputPassword" name="inputPassword">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputKonfirmasiPassword">Konfirmasi Kata Sandi</label>
+                            <input type="password" class="form-control" id="inputKonfirmasiPassword" name="inputKonfirmasiPassword">
+                        </div>
+
+                        <div class="spacebutton">
+                            <button type="submit" class="btn btn-primary">Daftar</button>
+                        </div>
+                    </form>
+                    
                 </div>
             </div>
-        </nav>
-    </section>  
-    <div class="garis"></div>
-    <div class="cs">
-        <img class="customer_service" src="./Images/CustomerService.png">
-    </div>
-    <div class="warning">
-        <h1 class="warning-text">Hai, Masuk Ke</h1>
-        <h1 class="warning-text">Akunmu Dulu Yuk!</h1> 
-    </div>
-    <div class="warning-button">
-        <a href="/Masuk" type="button" class="btn btn-primary btn-lg">Masuk</a>
-        <a href="/Daftar" type="button" class="btn btn-primary btn-lg">Daftar</a>
-    </div>
+        </section>
+
     <!-- Footer -->
     <footer
           class="text-center text-lg-start text-white"
@@ -141,7 +176,7 @@
 
           <!-- Grid column -->
           <div class="col-md-3 col-lg-1 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">Ikuti Kami</h6>
 
             <a class="logo_sosmed" href= "https://www.instagram.com/%22%3E"><i class="fa fa-instagram"></i></a>
             <a class="logo_sosmed" href="https://twitter.com/home%22%3E"><i class="fa fa-twitter"></i></a>
@@ -221,5 +256,10 @@
     <!-- Copyright -->
     </footer>
     <!-- Footer -->
-</body>
+    <!-- </div> -->
+    <!-- End of .container -->
+    <!---------------------------------------->
+    <script src="./herta_kuru-main/script.js" async></script>
+    <!---------------------------------------->
+    </body> 
 </html>

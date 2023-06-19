@@ -39,7 +39,7 @@ Route::get('/WisataKuliner', [WisataKulinerController::class, 'WisataKuliner']);
 
 Route::get('/WisataSejarah', [WisataSejarahController::class, 'WisataSejarah']);
 
-Route::POST('/Daftar', [UserController::class, 'SimpanDataDaftar'])->name('postmasuk');
+Route::post('/Daftar', [UserController::class, 'SimpanDataMasuk'])->name('postmasuk');
 
 // Route::get('welcome', function () {
 //     return view('welcome');

@@ -3,28 +3,39 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Model\User;
+use App\Models\User;
+
+
 
 class UserController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+
     public function Masuk()
     {
         return view('Masuk');
     }
 
-    public function SimpanDataMasuk(Request $request)
+    public function SimpanDataDaftar(Request $request)
     {
-        $data = $request->validate([
-            'name' => 'required|max:255',
-            'email' => 'required|email|unique:users',
-            'phone' => 'required|unique:users',
-            'password' => 'required|min:6',
-            'name' => 'required|max:255',
+        // dd($request);
+        $validatedData = $request->validate([
+            'name' => ['required','max:255'],
+            'email' => ['required','email'],
+            'phone' => ['required'],
+            'password_confirmation' => ['required'],
+            'password' => ['required','min:6', 'confirmed'],
         ]);
 
-        $data['password'] = bcrypt($data['password']);
+        // dd($validatedData);
 
-        User::create($data);
+        $request['password'] = bcrypt($request['password']);
+
+        User::create($validatedData);
 
         return view('welcome');
     }
